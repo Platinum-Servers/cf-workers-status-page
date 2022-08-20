@@ -18,7 +18,7 @@ monitors:
   - id: platinumservers-es # unique identifier
     name: platinumservers.es
     description: 'Tu host de confianza' # default=empty
-    url: 'https://platinumservers.es/' # URL to fetch
+    url: 'https://185.47.130.200/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
