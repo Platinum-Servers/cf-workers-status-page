@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: platinumservers-es # unique identifier
-    name: Página web
+    name: 'Página web'
     description: 'Tu host de confianza' # default=empty
     url: 'https://185.47.130.200/' # URL to fetch
     method: GET # default=GET
