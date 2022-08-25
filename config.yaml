@@ -15,10 +15,37 @@ settings:
   dayInHistogramNotOperational: ' incidente(s)' # xx incident(s) recorded
 
 monitors:
-  - id: platinumservers-es # unique identifier
+  - id: web # unique identifier
     name: 'Página web'
-    description: 'Tu host de confianza' # default=empty
     url: 'https://185.47.130.200/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+  - id: ptero # unique identifier
+    name: 'GameServers'
+    url: 'https://ptero.platinumservers.es/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+  - id: web # unique identifier
+    name: 'Hosting Web'
+    url: 'https://185.47.130.200/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+  - id: fr1 # unique identifier
+    name: 'Fr1'
+    url: 'https://fr1.goldenservers.es/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+  - id: ca1 # unique identifier
+    name: 'Ca1'
+    url: 'https://ca1.goldenservers.es/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
