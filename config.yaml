@@ -17,7 +17,7 @@ settings:
 monitors:
   - id: web # unique identifier
     name: 'Página web'
-    url: 'https://185.47.130.200/' # URL to fetch
+    url: 'http://185.47.130.200/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -31,21 +31,21 @@ monitors:
     linkable: false # allows the title to be a link, default=true
   - id: web # unique identifier
     name: 'Hosting Web'
-    url: 'https://185.47.130.200/' # URL to fetch
+    url: 'http://185.47.130.200/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
   - id: fr1 # unique identifier
     name: 'Fr1'
-    url: 'https://fr1.goldenservers.es/' # URL to fetch
+    url: 'https://fr1.goldenservers.es:8006/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
   - id: ca1 # unique identifier
     name: 'Ca1'
-    url: 'https://ca1.goldenservers.es/' # URL to fetch
+    url: 'https://ca1.goldenservers.es:8006/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
